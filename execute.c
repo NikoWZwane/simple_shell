@@ -27,7 +27,7 @@ void invoke_command(const char *command)
 	}
 		args[arg_count] = NULL;
 		execvp(args[0], args);
-		get_print("Error executing command.\n");
+		get_print("No such file or directory.\n");
 		exit(EXIT_FAILURE);
 	}
 	else
